@@ -1,0 +1,303 @@
+/* أضف قواعد CSS هنا */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+p,
+button {
+  font-family: "Trebuchet MS";
+}
+/*---- HRADER ----*/
+header {
+  display: flex;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-left: 5%;
+}
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 5%;
+}
+
+.navbar-item {
+  display: block;
+  padding: 8px;
+  float: left;
+  margin-left: 40px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.cart-item {
+  display: block;
+  padding-top: 20px;
+  padding-left: 60%;
+}
+
+.navbar-cart {
+  color: #333333;
+  text-decoration: none;
+  padding: 10px;
+}
+/* ----// HRADER // ----*/
+
+/*---- HERO ----*/
+.Hero-container {
+  display: flex;
+}
+
+.hero-image {
+  position: relative;
+  bottom: 100px;
+  z-index: -1;
+  padding-right: 10px;
+  height: 100%;
+}
+.hero-image img {
+  margin-top: 0;
+  width: 100%;
+  /* content: url(../img/hero.png); */
+  background-color: transparent;
+}
+
+.hero-description {
+  padding-left: 200px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-description h2 {
+  font-size: 3.5rem;
+  padding-bottom: 0;
+}
+.hero-description-paragraf {
+  padding-bottom: 50px;
+}
+.hero-description-button {
+  background-color: #333333;
+  color: aliceblue;
+  border: none;
+  width: 45%;
+  height: 6%;
+}
+/*----// HERO //----*/
+
+/*---- PRODUCT ----*/
+.product-descripiton {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.products-container {
+  margin-top: 100px;
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  /* to actually make the gide 3 to 3*/
+  grid-template-columns: repeat(3, auto);
+}
+.product-container-Link {
+  color: #333333;
+  text-decoration: none;
+}
+/*----// PRODUCT// ----*/
+/*---- MORE BUTTON ----*/
+.moreProduts-button-container {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+.moreProduts-button {
+  background-color: transparent;
+  color: #333333;
+  border: 2px, solid, #333333;
+  width: 17%;
+}
+/*----// MORE BUTTON //----*/
+/*---- FOOTER ----*/
+footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 200px;
+  width: 80%;
+  padding-left: 150px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eeeeee;
+  width: 58%;
+  font-size: 2rem;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+.emailInput {
+  background: url(../img/arrow.svg) no-repeat scroll 93% 25px;
+  background-color: transparent;
+  height: 20%;
+}
+.emailInput ::placeholder {
+  font-size: 3rem;
+}
+.footerNav-container {
+  width: 83%;
+  padding-left: 100px;
+  padding-top: 80px;
+}
+
+.footerNav-container li {
+  color: #333333;
+  display: inline;
+}
+
+.footerNav-item {
+  padding: 10px;
+  text-decoration: none;
+}
+/*----// FOOTER //----*/
+
+/*---- CART ----*/
+
+/*----  TABLECART ----*/
+.tableHead {
+  padding-bottom: 20px;
+  position: relative;
+  float: left;
+  font-size: 2rem;
+}
+.cartTable-table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 200px;
+}
+.cartTable-row td {
+  border-top: 1px solid #ddd;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.tableTitle {
+  background-color: darkturquoise;
+  width: 500px;
+}
+.chech-out-item-button {
+  width: 200px;
+  padding-right: 250px;
+}
+.chech-out-item-button button {
+  height: 50px;
+  padding: 10px;
+  width: 200px;
+}
+.chech-out-item-button-color {
+  background-color: transparent;
+  border-top: 1px solid #333333;
+}
+.allItems-Button button {
+  background-color: #333333;
+  color: #ddd;
+}
+.cartTable-final-row {
+  background-color: #f5f5f5;
+}
+.cartTable-final-row td {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pagination {
+  position: relative;
+  left: 200px;
+}
+.page-item {
+  display: inline;
+}
+.page-item a {
+  padding: 8px;
+  background-color: #f5f5f5;
+}
+/*---- // TABLECART //----*/
+
+/*--- DETAILS ---*/
+.details-container {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.sideImages-container {
+  display: flex;
+  flex-direction: column;
+}
+.sideImages-container img {
+  margin-bottom: 20px;
+}
+.main-image img {
+  width: 500px;
+}
+.descreipiton-container {
+  width: 30%;
+}
+.descreipiton-container h3 {
+  font-size: 2.3rem;
+}
+.colorChoosing {
+  display: flex;
+  justify-content: left;
+  justify-items: center;
+  align-items: center;
+}
+.color-1 {
+  background-color: #c47573;
+}
+.color-2 {
+  background-color: #7076ca;
+}
+.color-3 {
+  background-color: #333333;
+}
+.colorCude {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px 10px 10px 10px;
+}
+.currentcolor {
+  content: url(../img/whiteCircle.svg);
+}
+.buttons-container {
+  display: flex;
+}
+.details-description-item {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  color: #333333;
+  border: 2px, solid, #333333;
+}
+.hero-description-addTocart {
+  width: 200px;
+  height: 60px;
+  background-color: #333333;
+  color: #eeeeee;
+  margin-left: 20px;
+}
+
+/*---// DETAILS //---*/
