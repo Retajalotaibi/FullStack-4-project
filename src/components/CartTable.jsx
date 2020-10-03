@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import CartBody from "./cartBody";
 
 class CartTable extends Component {
-  thePriceSum = () => {
-    console.log(this.props.data);
-    return 2;
-  };
   handleSort = (sortColumn) => {
     this.setState({ sortColumn });
     console.log(this.state.sortColumn);
