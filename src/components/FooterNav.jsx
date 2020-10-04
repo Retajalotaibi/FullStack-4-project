@@ -11,7 +11,7 @@ const FooterNav = () => {
         <NavLink exact to="/Coustomer" className="footerNav-item">
           <li>Customer Care</li>
         </NavLink>
-        <NavLink exact to="/instagram" className="footerNav-item">
+        <NavLink exact to="/contact" className="footerNav-item">
           <li>Instagram</li>
         </NavLink>
         <NavLink exact to="/about" className="footerNav-item">

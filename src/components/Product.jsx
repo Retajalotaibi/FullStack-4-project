@@ -5,6 +5,9 @@ class Product extends Component {
     super(props);
     this.state = {};
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const { key, image, name, price } = this.props.product;
     return (

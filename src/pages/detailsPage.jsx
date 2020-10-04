@@ -12,7 +12,6 @@ class DetailsPage extends Component {
     const key = this.props.match.params.id;
     const silcedData = this.props.data.slice(1, 4);
     const selectedData = this.props.data.find((data) => data.key.includes(key));
-    console.log(selectedData);
     return (
       <div>
         <Detail

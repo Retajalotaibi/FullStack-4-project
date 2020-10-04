@@ -12,9 +12,9 @@ class App extends React.Component {
     Headerposition: "relative",
     cartItems: [],
   };
+
   handleDelete = (Selecteditem) => {
     let remove = this.state.cartItems.indexOf(Selecteditem);
-    console.log(remove);
     this.setState(
       {
         cartItems: this.state.cartItems.filter((_, index) => index !== remove),
@@ -25,7 +25,6 @@ class App extends React.Component {
     );
   };
   handleHasgChange = (pathname) => {
-    console.log(pathname);
     if (pathname === "/cart") {
       this.setState({ cartActivated: true });
     } else if (pathname === "/") {
@@ -37,17 +36,20 @@ class App extends React.Component {
   };
 
   handleCartAdding = async (selectedItem, count) => {
-    console.log("an item has been added");
-    const myItem = {
-      name: selectedItem.name,
-      price: selectedItem.price,
-      description: selectedItem.description,
-      image: selectedItem.image,
-      key: selectedItem.key,
-      count: count,
-    };
-    await this.setState({ cartItems: [...this.state.cartItems, myItem] });
-    console.log(this.state.cartItems);
+    try {
+      const myItem = {
+        name: selectedItem.name,
+        price: selectedItem.price,
+        description: selectedItem.description,
+        image: selectedItem.image,
+        key: selectedItem.key,
+        count: count,
+      };
+      await this.setState({ cartItems: [...this.state.cartItems, myItem] });
+      alert("an item have been add successfully");
+    } catch (error) {
+      alert("some thing went wrong");
+    }
   };
   render() {
     return (

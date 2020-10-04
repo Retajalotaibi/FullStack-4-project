@@ -23,7 +23,7 @@ class Header extends Component {
           <NavLink exact to="/" className="navbar-item">
             <li>Home</li>
           </NavLink>
-          <NavLink exact to="/cellection" className="navbar-item">
+          <NavLink exact to="/contact" className="navbar-item">
             <li>Cellection</li>
           </NavLink>
           <NavLink exact to="/contact" className="navbar-item">
