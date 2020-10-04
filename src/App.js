@@ -14,6 +14,7 @@ class App extends React.Component {
   };
 
   handleDelete = (Selecteditem) => {
+    console.log("hi");
     let remove = this.state.cartItems.indexOf(Selecteditem);
     this.setState(
       {
